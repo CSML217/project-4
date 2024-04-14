@@ -1,10 +1,10 @@
 [app]
 
 # (str) Title of your application
-title = Code420
+title = code420
 
 # (str) Package name
-package.name = Code420
+package.name = code420
 
 # (str) Package domain (needed for android/ios packaging)
 package.domain = org.test
@@ -16,7 +16,7 @@ source.dir = .
 source.include_exts = py,png,jpg,kv,atlas
 
 # (list) List of inclusions using pattern matching
-source.include_patterns = assets/textures/background/*.png, assets/textures/buttons/*.png, assets/textures/labels_black/*.png, assets/textures/letter_and_box/*.png, assets/textures/numbers_black/*.png, assets/textures/other_icons/*.png
+#source.include_patterns = assets/*,images/*.png
 
 # (list) Source files to exclude (let empty to not exclude anything)
 #source.exclude_exts = spec
@@ -37,17 +37,17 @@ version = 0.1
 
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
-requirements = python3==3.12.2,kivy==2.3.0,docutils,kivy-deps.angle,kivy-deps.glew,kivy-deps.sdl2,Kivy-Garden,pygments,pypiwin32
+requirements = python3,kivy==2.1.0,kivymd,hostpython3, libffi, openssl, sdl2_image, sdl2_mixer, sdl2_ttf, sqlite3, python3, sdl2, setuptools, six, pyjnius, android, kivy, idna, urllib3, chardet, certifi, requests
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
 # requirements.source.kivy = ../../kivy
 
 # (str) Presplash of the application
-#presplash.filename = %(source.dir)s/data/presplash.png
+#presplash.filename = %(source.dir)s/data/logo_1.png
 
 # (str) Icon of the application
-icon.filename = %(source.dir)s/data/logo/logo_1.png
+#icon.filename = %(source.dir)s/data/logo_1.png
 
 # (list) Supported orientations
 # Valid options are: landscape, portrait, portrait-reverse or landscape-reverse
